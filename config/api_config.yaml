@@ -1,0 +1,13 @@
+rxnorm:
+  base_url: "https://rxnav.nlm.nih.gov/REST"
+  rate_limit: 0.2
+  timeout: 30
+  retries: 3
+
+umls:
+  api_key: null
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/mapper.log"

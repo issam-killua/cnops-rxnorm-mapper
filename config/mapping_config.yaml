@@ -1,0 +1,23 @@
+mapping:
+  confidence_thresholds:
+    high: 0.8
+    medium: 0.5
+    low: 0.3
+  strategies:
+    - direct_lookup
+    - translation_based
+    - fuzzy_matching
+  validation:
+    name_similarity_threshold: 60
+    combination_drug_penalty: 0.7
+    form_mismatch_penalty: 0.8
+    max_alternatives: 5
+
+output:
+  formats: [excel, json]
+  include_alternatives: true
+  batch_size: 100
+
+processing:
+  max_workers: 4
+  chunk_size: 500
